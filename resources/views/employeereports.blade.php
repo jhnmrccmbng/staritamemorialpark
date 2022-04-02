@@ -53,9 +53,8 @@
         <h4>Employee Reports</h4>
         
         <div class="btn-group" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-primary">Add</button>
-  <button type="button" class="btn btn-success">Edit</button>
-  <button type="button" class="btn btn-danger">Delete</button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addemployee">Add</button>
+ 
 </div>
 
         <div class="input-group rounded col-md-4 float-right">
@@ -77,6 +76,7 @@
                   <th>Position</th>
                   <th>Status</th>
                   <th>Salary</th>
+                  <th>Action</th>
                  
                 </tr>
 
@@ -85,7 +85,10 @@
                   <td>John Wick</td>
                   <td>CEO</td>
                   <td>Owner</td>
-                  <td>-----</td>
+                  <td>-----</td><td>
+                   <button type="button" class="btn btn-success">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                  </td>
                 </tr>
 
                 <tr>
@@ -93,7 +96,10 @@
                   <td>Clark Kent</td>
                   <td>Guard</td>
                   <td>Regular</td>
-                  <td>-----</td>
+                  <td>-----</td><td>
+                   <button type="button" class="btn btn-success">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                  </td>
                 </tr>
 
                 <tr>
@@ -101,7 +107,10 @@
                   <td>Vico Sotto</td>
                   <td>Accounting</td>
                   <td>Regular</td>
-                  <td>-----</td>
+                  <td>-----</td><td>
+                   <button type="button" class="btn btn-success">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                  </td>
                 </tr>
 
                 <tr>
@@ -109,7 +118,10 @@
                   <td>Bruce Wayne</td>
                   <td>Caretaker</td>
                   <td>Regular</td>
-                  <td>-----</td>
+                  <td>-----</td><td>
+                   <button type="button" class="btn btn-success">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                  </td>
                 </tr>
 
                 <tr>
@@ -117,8 +129,13 @@
                   <td>Steeve Rogers</td>
                   <td>Caretaker</td>
                   <td>Regular</td>
-                  <td>-----</td>
+                  <td>-----</td><td>
+                   <button type="button" class="btn btn-success">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                  </td>
                 </tr>
+
+
 
               </table>
           </div>
@@ -129,6 +146,47 @@
 
 
 
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="addemployee" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Create Client Record</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Position</label>
+    <input type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+   <div class="form-group">
+    <label for="exampleInputPassword1">Status</label>
+    <input type="text" class="form-control" id="exampleInputPassword1">
+  </div>
+   <div class="form-group">
+    <label for="exampleInputPassword1">Salary</label>
+    <input type="number" class="form-control" id="exampleInputPassword1">
+  </div>
+  
+ 
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save Record</button>
+      </div>
+    </div>
   </div>
 </div>
 
